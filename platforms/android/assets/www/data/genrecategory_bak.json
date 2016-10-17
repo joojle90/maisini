@@ -1,0 +1,27 @@
+{
+    "genrecategory": [{
+        "genreid": "CNGR001",
+        "genrename": "Adventure",
+        "description": "Adventure description",
+        "image": "adventure.jpg",
+        "movielist": [{
+            "movieid": "CNMV001",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 130
+        }, {
+            "movieid": "CNMV002",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 110
+        }, {
+            "movieid": "CNMV003",
+            "moviename": "The Angry Bird",
+            "image_small": "img/angrybird.jpg",
+            "like": 120,
+            "duration": 120
+        }]
+    }]
+}

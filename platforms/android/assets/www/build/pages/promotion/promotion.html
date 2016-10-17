@@ -1,0 +1,28 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Promotion</ion-title>
+        <button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+
+        <ion-buttons end>
+            <button (click)="getpromotion()">
+                <ion-icon ios="ios-cart" md="md-cart"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="promotion">
+    <ion-slides id="slider" pager [options]="slideconf">
+        <ion-slide *ngFor="let pml of promotionlist; let i = index">
+            <p class="promotion-disc">{{pml.discount}}% Off</p>
+            <img src="img/poster_potr/{{pml.image_potr}}" class="slide-image" />
+
+            <button fab darklight fab-bottom fab-right (click)="watchtrailer(pml.moviedetails[0])" style="z-index:100">
+                <ion-icon name='play' is-active="false"></ion-icon>
+            </button>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
